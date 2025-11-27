@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio of Vinay</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!----------------------------------+ Header +---------------------------------------->
+
+    <header>
+      <div class="logo">
+        <img src="image/logo.png" alt="logo" />
+      </div>
+      <div class="topnav">
+        <nav>
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Certificates">Certificates</a>
+          <a href="#Contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-----------------mobile Menu-------------------------------->
+
+      <div class="icon">
+        <div class="mobilemenu" onclick="menu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <!--<i class="fa-solid fa-bars" onclick="menu()"></i>-->
+
+        <ul id="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!----------------------------------+ Home +---------------------------------------->
+
+    <section id="Home">
+      <div class="main">
+        <div class="container">
+          <h4>Hay, I'm <br /></h4>
+          <h2>Vinay Khot</h2>
+          <h5>Computer Engineering (Diploma)</h5>
+          <p>
+            I have a strong passion for programming and continuously
+            <br />strive to improve my skills in advanced development. <br />
+            My goal is to build innovative and efficient solutions <br />by
+            combining creativity with technical expertise.
+          </p>
+          <button type="submit" onclick="resume()">Resume</button>
+        </div>
+        <div class="photo">
+          <img src="image/vinay.png" alt="vinay" />
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------+ About +---------------------------------------->
+
+    <section id="About">
+      <div class="about">
+        <div class="details">
+          <img src="image/vinay.png" alt="vinay" />
+        </div>
+        <div class="info">
+          <h2>About me</h2>
+          <p>
+            My name is Vinay Vishwas Khot, and I am currently a third-year
+            student pursuing a Diploma in Computer Engineering.<br />
+            I have a strong interest in technology and programming.<br />
+            Right now, I am doing an internship focused on Web Development and
+            AI/ML.<br />
+            This experience is helping me gain practical skills for my future
+            career in tech.
+          </p>
+          <div class="education">
+            <h5>Education</h5>
+            <hr />
+            <table>
+              <tr>
+                <td>10<sup>th</sup></td>
+                <td>2023</td>
+                <td>89.80%</td>
+              </tr>
+              <tr>
+                <td>Computer Engineering (Diploma)</td>
+                <td>2026</td>
+              </tr>
+            </table>
+          </div>
+          <div class="social">
+            <a
+              href="https://www.instagram.com/accounts/login/?hl=en"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/vinay-khot-885994378/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://wa.me/+919860193979?text=" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="tel:+919860193979"><button>Contact</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------+ Skills +---------------------------------------->
+
+    <section id="Skills">
+      <div class="skills">
+        <h2>Skills</h2>
+        <div class="development" onfocus="skill()">
+          <h4>Web Development</h4>
+          <div class="webdesign">
+            <div class="lang">
+              <img src="Skills/html.png" alt="html" />
+            </div>
+            <div class="lang">
+              <img src="Skills/css.png" alt="css" />
+            </div>
+            <div class="lang">
+              <img src="Skills/js.png" alt="js" />
+            </div>
+            <div class="lang">
+              <img src="Skills/php.png" alt="PHP" />
+            </div>
+            <div class="lang">
+              <img src="Skills/mysql.png" alt="MySQL" />
+            </div>
+          </div>
+          <h4>Programming Language</h4>
+          <div class="programming">
+            <div class="lang">
+              <img src="Skills/c.png" alt="c" />
+            </div>
+            <div class="lang">
+              <img src="Skills/c++.png" alt="c++" />
+            </div>
+            <div class="lang">
+              <img src="Skills/python.png" alt="python" />
+            </div>
+            <div class="lang">
+              <img src="Skills/Java.png" alt="java" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------+ Certificate +---------------------------------------->
+
+    <section id="Certificates">
+      <div class="certificate">
+        <h2>Certificates</h2>
+        <div class="completed">
+          <div class="course">
+            <img
+              class="intern"
+              src="image/Industrial training.jpeg"
+              alt="training"
+            />
+          </div>
+          <div class="course">
+            <img src="image/MSBTE.jpeg" alt="msbte" />
+          </div>
+          <div class="course">
+            <img src="image/MaTPO.jpeg" alt="MaTPO" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------+ Contact +---------------------------------------->
+
+    <section id="Contact">
+      <div class="contact">
+        <h2>Contact</h2>
+        <form onsubmit="sendMessage()">
+          <fieldset>
+            <p>Send Message</p>
+            <label>Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name..."
+              required
+            /><br />
+            <label>Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email..."
+              required
+            /><br />
+            <label>City : </label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="City..."
+              required
+            /><br />
+            <label>Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="3"
+              placeholder="Message..."
+            ></textarea>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="logo">
+        <img src="image/logo.png" alt="logo" />
+      </div>
+      <div class="links">
+        <div class="menu">
+          <h3>Quick Links</h3>
+          <br />
+          <a href="#Home"> <i class="fa-solid fa-home"></i>&nbsp; Home </a>
+          <br /><br />
+          <a href="#About"> <i class="fa-solid fa-user"></i>&nbsp; About </a
+          ><br /><br />
+          <a href="#Skills">
+            <i class="fa-solid fa-laptop-code"></i>&nbsp; Skills
+          </a>
+          <br /><br />
+          <a href="#Certificates"
+            ><i class="fa-solid fa-certificate"></i>&nbsp; Certificates
+          </a>
+          <br /><br />
+          <a href="#Contact">
+            <i class="fa-solid fa-phone"></i>&nbsp; Contact
+          </a>
+        </div>
+        <div class="talk">
+          <h3>Talk to Me</h3>
+          <br />
+          <a href="tel:+919860193979"
+            ><i class="fa-solid fa-phone"></i>&nbsp; Call me</a
+          ><br /><br />
+          <a href="mailto:vinaykhot477@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>&nbsp; Mail me</a
+          ><br /><br />
+          <a href="https://wa.me/+919860193979?text="
+            ><i class="fa-brands fa-whatsapp"></i>&nbsp; Chat me</a
+          >
+        </div>
+        <div class="media">
+          <h3>Follow Me</h3>
+          <br />
+          <a
+            href="https://www.instagram.com/accounts/login/?hl=en"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i>&nbsp; Instagram</a
+          ><br /><br />
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i>&nbsp; Facebook</a
+          ><br /><br />
+          <a
+            href="https://www.linkedin.com/in/vinay-khot-885994378/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i>&nbsp; Linkedin</a
+          ><br /><br />
+        </div>
+      </div>
+      <div class="rights">
+        <p>2025 vinay-khot-47</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
